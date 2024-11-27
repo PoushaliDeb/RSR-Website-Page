@@ -174,11 +174,13 @@ const CourseList: React.FC = () => {
         <div className="courses-horizontal">
           {courses.map((course) => (
             <div className="course-card" key={course.id}>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
               <img
                 src={course.image}
                 alt={course.title}
                 className="course-image"
               />
+              </a>
               <p className="course-title">{course.title}</p>
             </div>
           ))}
